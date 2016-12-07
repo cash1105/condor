@@ -1,0 +1,7 @@
+Job angle rand_angle.condor
+Job sine sine.condor
+Job cosine cosine.condor
+PARENT angle CHILD sine cosine
+Job collect collect.condor
+PARENT sine cosine CHILD collect
+Retry collect 3

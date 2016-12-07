@@ -1,0 +1,11 @@
+executable      = rand_angle
+arguments 	= 
+Universe        = vanilla
+Output          = out.$(cluster)
+Error           = err.$(cluster)
+Log             = log.$(cluster)
+requirements	= UidDomain == "cloud.univalle.edu.co"
+should_transfer_files   = YES
+when_to_transfer_output = ON_EXIT
+queue
+
